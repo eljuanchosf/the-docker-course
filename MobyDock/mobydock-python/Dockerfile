@@ -15,4 +15,4 @@ COPY . .
 
 VOLUME ["static"]
 
-CMD gunicorn -b 0.0.0.0:8000 "mobydock.app:create_app()"
+CMD gunicorn -b 0.0.0.0:8000 --reload "mobydock.app:create_app()"
